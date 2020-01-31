@@ -2,99 +2,69 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="twitter.css">
 <style>
-* {
-  box-sizing: border-box;
-}
-
-	body{ 
-	 font-family: Arial, Helvetica, sans-serif;
-	}
 	
-	
-header {
-  background-color: #666;
-  padding: 05px;
-  text-align: center;
-  font-size: 15px;
+body {
+  font-family: Arial;
   color: white;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 40%;
-  height: 700px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: visiable;
+  padding-top: 10px;
 }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+.left{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: black;
 }
 
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 700px; /* only for demonstration, should be removed */
+.right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 25vw;
+  background-color: black
 }
 
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 05px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
 </style>
 </head>
 <body>
 
-<header>
-  <h2>Announcement</h2>
-</header>
+<div class="split left">
+   
+   <div id="container">
 
-<section>
-  <nav>
-	  <div>
-    <div> <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRRR2Ny64IMqgrEKTMGJ8NyNpSqDhsLDNTrjIzbJzqkPmC7ZImtA0eiCneRhiE6XW7SpGRj-Y8O3OKq/embed?start=true&loop=true&delayms=5000" frameborder="0" width="1440" height="900" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+	 <div>
+    <div> 
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQBEH0eCm0xEsbTYBwClM8XCAfWtkq08IDJHsrlGVWwDxOTOTd3g3U-KyzyCBQonnSQEY7P1QejFVHu/embed?start=true&loop=true&delayms=5000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+		
+	</div>  	
+	 
+     
+</div>
+
+<div class="split right">
+  <div class="center">
+	  
 	</div>
-	  <div>
-  </nav>
-  
-  <article>
-	  <div>
-   <div><a class="twitter-timeline" data-width="550" data-height="900" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/ClementsHighAL?ref_src=twsrc%5Etfw">Tweets by ClementsHighAL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"scrolling="no"></script></div>
-	</div>
-	  <div>
-  </article>
-</section>
+    <div style="width:525px;height:800px; overflow:hidden; border solid 1px; assign:right;">
 
-<footer>
-  </div>
+<a class="twitter-timeline" data-width="550" data-height="840" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/ClementsHighAL?ref_src=twsrc%5Etfw">Tweets by ClementsHighAL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"scrolling="no"></script></div>
+</div>
 
-	
 </div>
 	<div class= "<iframe src="http://free.timeanddate.com/clock/i71yxiju/n837/fn6/fs48/fc9ff/tc000/ftbi/bas0/bat1/bacfff/pa8/tt0/tw0/tm1/th2/ts1" frameborder="0" width="1420" height="100"></iframe>"
 </div>	
@@ -104,10 +74,19 @@ footer {
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://weatherwidget.io/js/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","weatherwidget-io-js");
 </script>
-</footer>
-
+</div>	
+</div>
+     
 </body>
-</html>
+</html> 
 
-	
-	
+
+
+
+
+
+
+
+
+
+
